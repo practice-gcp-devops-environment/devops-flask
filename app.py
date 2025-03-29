@@ -5,7 +5,7 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(config.config_module)
 
-    @app.route("/")
+    @app.route("/flask/test")
     def hello():
         return f"DB: {app.config['DATABASE_URL']}"
 
